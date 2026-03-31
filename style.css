@@ -1,0 +1,101 @@
+/* ===== F1 Clean Theme (Black / Red Neon) ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #e6e6e6;
+    font-family: "Arial", sans-serif;
+    line-height: 1.7;
+}
+
+/* Global spacing for content */
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Main Title */
+h1 {
+    font-size: 42px;
+    color: #00d2be;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px #00d2be;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 30px;
+    color: #ffffff;
+    border-bottom: 2px solid #00d2be;
+    padding-bottom: 10px;
+    width: 70%;
+    margin: 40px auto 20px auto;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+/* Links */
+a {
+    color: #00d2be;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-shadow: 0 0 8px #00d2be;
+}
+
+/* Sources list */
+.sources ul {
+    list-style: square;
+    padding-left: 25px;
+}
+
+/* Quiz Box */
+.quiz-box {
+    margin-top: 60px;
+    padding: 30px;
+    background: #1b1b1b;
+    border-left: 5px solid #00d2be;
+    border-radius: 6px;
+}
+
+.quiz-box h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #00d2be;
+}
+
+.quiz-option {
+    padding: 12px;
+    margin-top: 10px;
+    background: #222;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.quiz-option:hover {
+    background: #00d2be;
+    color: black;
+}
+
+#quiz-result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}

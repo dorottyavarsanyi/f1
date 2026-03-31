@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>A Mercedes története a Forma–1-ben</title>
+    <!-- Külső CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== TARTALMI BLOKK ===== -->
+<div class="content">
+
+    <h1>A MERCEDES TÖRTÉNETE A FORMA–1-BEN</h1>
+
+    <h2 id="korai">A kezdetek és a Silver Arrows</h2>
+    <p>
+        A Mercedes motorsporttörténete egészen az 1930-as évekre nyúlik vissza, amikor a márka
+        legendás Silver Arrows versenyautóival uralta az európai Grand Prix-ket. Az ekkoriban
+        alkalmazott műszaki megoldások mérnöki áttörések voltak, és meghatározták a márka
+        versenyautó-fejlesztési irányát a következő évtizedekre.
+    </p>
+
+    <h2 id="1954">1954–1955 – A korai F1-sikerek</h2>
+    <p>
+        A Mercedes 1954-ben tért vissza az autósport elitjébe. A csapat első autója, a W196,
+        teljesen új mérnöki szemléletet hozott. Juan Manuel Fangio vezetésével a Mercedes
+        dominálta az 1954-es és 1955-ös szezont, mielőtt a tragikus Le Mans-i baleset után
+        a márka visszavonult a motorsportból.
+    </p>
+
+    <h2 id="vissza">1994–2009 – Motorgyártóként való visszatérés</h2>
+    <p>
+        A Mercedes 1994-ben tért vissza a Forma–1-be, ekkor még motorgyártóként, több csapatot is
+        ellátva erőforrásokkal. A McLarennel való partnerkapcsolat hozta a legnagyobb sikereket,
+        amelyek világklasszis pilóták bajnoki címeiben mutatkoztak meg, többek között Mika Häkkinen
+        és Lewis Hamilton révén.
+    </p>
+
+    <h2 id="modern">2010–2025 – A modern Mercedes korszak</h2>
+    <p>
+        2010-ben a Mercedes gyári csapatként tért vissza a Brawn GP felvásárlásával. A 2014-es
+        hibridmotor-korszak kezdetével megkezdődött a sport történetének egyik legerősebb
+        dominanciája: a csapat sorozatban több világbajnoki címet szerzett a konstruktőrök és a
+        pilóták között is. Lewis Hamilton és Nico Rosberg neve a korszak szimbóluma lett.
+    </p>
+
+    <!-- ===== FORRÁSOK ===== -->
+    <h2 id="forrasok">Források</h2>
+    <div class="sources">
+        <ul>
+            <li>https://f1blast.com/history-of-mercedes-in-formula-1/</li>
+            <li>https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One</li>
+        </ul>
+    </div>
+
+    <!-- ===== Kvíz – ABC-s választás ===== -->
+    <div class="quiz-box">
+        <h3>Kvíz: Melyik évben kezdődött a Mercedes hibridkorszaka?</h3>
+
+        <div class="quiz-option" onclick="checkAnswer('A')">A) 2010</div>
+        <div class="quiz-option" onclick="checkAnswer('B')">B) 2014</div>
+        <div class="quiz-option" onclick="checkAnswer('C')">C) 2017</div>
+
+        <p id="quiz-result"></p>
+    </div>
+
+</div> <!-- content vége -->
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+function checkAnswer(option) {
+    const result = document.getElementById("quiz-result");
+
+    if (option === "B") {
+        result.innerHTML = "✅ Helyes válasz! 2014-ben kezdődött a Mercedes hibridkorszaka.";
+        result.style.color = "#00d2be";
+    } else {
+        result.innerHTML = "❌ Sajnos nem! A helyes válasz: 2014.";
+        result.style.color = "red";
+    }
+}
+</script>
+
+</body>
+</html>
