@@ -1,0 +1,25 @@
+body{
+    color: aliceblue;
+    background: linear-gradient(45deg, #290606, #a70c14);}
+
+nav{
+    background-color: #290606;
+    border: 2px solid black;
+    box-shadow: 6px 8px rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    float: center;
+    text-align: center;
+}
+
+menu a{
+    color:white;
+}
+
+menu a:hover{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
