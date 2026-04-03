@@ -1,25 +1,255 @@
 body{
-    color: aliceblue;
-    background: linear-gradient(45deg, #290606, #a70c14);}
+     background: linear-gradient(45deg, #330202, #991111);
+     padding-top: 120px;
+}
+
+#masodik{
+    background: linear-gradient(45deg, #2c0229, #e706d4);
+    padding-top: 120px;
+}
+
+#harmadik{
+    background: linear-gradient(45deg, #00d2be,#011f1c);
+    padding-top: 120px;
+}
 
 nav{
-    background-color: #290606;
-    border: 2px solid black;
-    box-shadow: 6px 8px rgba(255, 255, 255, 0.6);
-    overflow: hidden;
-    float: center;
+    height:fit-content; 
+    padding-top: 8px;    
+    font-size: 30px; 
+    background-color: black;
+    border: 5px solid rgb(156, 8, 8);
+    width: 99%;
+    box-shadow: 0 8px 15px 0 rgba(255, 255, 255, 0.5);
+    position:fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
-menu a{
-    color:white;
+nav li{
+    display: inline-block;
+    margin-bottom: 0px;
 }
 
-menu a:hover{
-    display: block;
-    color: white;
+.btn, a{
+    height: fit-content;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(156, 8, 8);
+    border: 2px solid white;
     text-align: center;
-    padding: 14px 16px;
+    background-color: black;
     text-decoration: none;
-  }
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
+.active,
+.btn:hover{
+    color: white;
+    background-color: rgb(156, 8, 8);
+    border: none;
+    border-radius: 8px;
+}
+
+.menu{
+    height:fit-content; 
+    padding-top: 8px;    
+    font-size: 30px; 
+    background-color: black;
+    border: 5px solid rgb(250, 121, 239);
+    width: 99%;
+    box-shadow: 0 8px 15px 0 rgba(255, 255, 255, 0.5);
+    position:fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.btn1, a{
+    height: fit-content;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(126, 8, 156);
+    border: 2px solid white;
+    text-align: center;
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn1active,
+.btn1:hover{
+    color: white;
+    background-color: rgb(126, 8, 156);
+    border: none;
+    border-radius: 8px;
+}
+
+.menu2{
+    height:fit-content; 
+    padding-top: 8px;    
+    font-size: 30px; 
+    background-color: black;
+    border: 5px solid #44817b;
+    width: 99%;
+    box-shadow: 0 8px 15px 0 rgba(255, 255, 255, 0.5);
+    position:fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.btn2, a{
+    height: fit-content;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #63807d;
+    border: 2px solid white;
+    text-align: center;
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.btn2active,
+.btn2:hover{
+    color: white;
+    background-color: #00d2be;
+    border: none;
+    border-radius: 8px;
+}
+
+#logo{
+float: left;
+width: 120px;
+}
+
+#cim{
+    color:white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.balkepek{
+    max-height: fit-content;
+    float: left;
+    background-color: black;
+    box-shadow: 0 8px 15px 0 rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.balkepek img{
+    display: block;
+    width:400px;
+    margin-top: 35px;
+    border-radius: 10px;
+    max-height: 400px;
+}
+
+.balkepek img:hover{
+    border: 2px solid white;
+    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.5);
+}
+
+.jobbkepek{
+    max-height: fit-content;
+    float: right;
+    background-color: black;
+    box-shadow: 0 8px 15px 0 rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+.jobbkepek img{
+    display: block;
+    width:400px;
+    margin-top: 35px;
+    border-radius: 10px;
+    max-height: 350px;
+}
+
+.jobbkepek img:hover{
+    border: 2px solid white;
+    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.5);
+}
+
+#forras{
+    font-size: 20px;
+    background-color: black;
+    border: 3px solid rgb(156, 8, 8);
+    max-width: 400px;
+    width: 20%;
+    box-shadow: 0 8px 15px 0 rgba(255, 255, 255, 0.5);
+    color:white;
+    float: left;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding: 20px;
+}
+
+#forras li{
+    list-style-image: url(logo2.png);
+    width: 30px;    
+}
+
+#forras a{
+    color: rgb(156, 8, 8);
+    text-decoration:solid;
+}
+
+#forras a:hover{
+    color:white;
+    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.5);
+}
+
+div{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 2000px;
+    border: 3px solid rgb(156, 8, 8);
+    border-radius: 15px;
+    background-color: black;
+    color:white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.5);
+}
+
+div h2{
+    text-align: center;
+}
+
+div:hover{
+    color: white;
+    background-color: rgb(66, 10, 10);
+    border-color: white;
+}
+
+@media (max-width: 768px){
+    .balkepek, .jobbkepek {
+        float: none;
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .balkepek img,.jobbkepek img {
+        width: 100%; 
+    }
+}
