@@ -1,16 +1,53 @@
-body{
+html{
+    scroll-behavior:smooth;
+}
+
+#elso{
      background: linear-gradient(45deg, #330202, #991111);
-     padding-top: 120px;
+     padding-top: 160px;
 }
 
 #masodik{
     background: linear-gradient(45deg, #2c0229, #e706d4);
-    padding-top: 120px;
+    padding-top: 160px;
 }
 
 #harmadik{
-    background: linear-gradient(45deg, #00d2be,#011f1c);
-    padding-top: 120px;
+background: radial-gradient(circle,#00d2be,#011f1c );   
+padding-top: 200px;
+}
+
+#negyedik{
+    background-image: url(23232.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 160px;
+}
+
+.auto{
+    margin-top: 10px;
+    display: block;
+}
+
+.auto img{
+    transition: transform 0.6s;
+}
+
+#elso .auto img{
+    transform: translateX(-130px);
+}
+
+#masodik .auto img{
+    transform: translateX(-360px);
+}
+
+#harmadik .auto img{
+    transform: translateX(145px);
+}
+
+#negyedik .auto img{
+    transform: translateX(370px);
 }
 
 nav{
@@ -45,6 +82,7 @@ nav li{
     padding: 20px;
     margin-left: 5px;
     margin-right: 5px;
+    transition-duration: 0.6s;
 }
 
 .active,
@@ -82,6 +120,7 @@ nav li{
     padding: 20px;
     margin-left: 5px;
     margin-right: 5px;
+    transition-duration: 0.6s;
 }
 
 .btn1active,
@@ -117,6 +156,7 @@ nav li{
     background-color: black;
     text-decoration: none;
     padding: 20px;
+    transition-duration: 0.6s;
 }
 
 .btn2active,
@@ -127,9 +167,57 @@ nav li{
     border-radius: 8px;
 }
 
+.menu3{
+    height:fit-content; 
+    padding-top: 8px;    
+    font-size: 30px; 
+    background-color: black;
+    border: 5px solid #29317e;
+    width: 99%;
+    box-shadow: 0 8px 15px 0 rgba(255, 255, 255, 0.5);
+    position:fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.btn3, a{
+    height: fit-content;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #504dee;
+    border: 2px solid white;
+    text-align: center;
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+    transition-duration: 0.6s;
+}
+
+.btn3active,
+.btn3:hover{
+    color: white;
+    background-color: #1c1249;
+    border: none;
+    border-radius: 8px;
+}
+
 #logo{
 float: left;
-width: 120px;
+width: 200px;
+}
+
+#logo1{
+    float: left;
+    width: 195px;
+    padding-top: 10px;
+}
+
+#autokicsi{
+    float: right;
+    width: 200px;
+    height: 163px;
 }
 
 #cim{
@@ -148,6 +236,7 @@ width: 120px;
     padding: 40px;
     margin-left: 60px;
     margin-top: 30px;
+    width: 402px;;
 }
 
 .balkepek img{
@@ -160,7 +249,7 @@ width: 120px;
 
 .balkepek img:hover{
     border: 2px solid white;
-    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
 }
 
 .jobbkepek{
@@ -171,6 +260,7 @@ width: 120px;
     padding: 40px;
     margin-right: 60px;
     margin-top: 30px;
+    width: 402px;
 }
 
 .jobbkepek img{
@@ -183,7 +273,7 @@ width: 120px;
 
 .jobbkepek img:hover{
     border: 2px solid white;
-    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
 }
 
 #forras{
@@ -208,14 +298,17 @@ width: 120px;
 #forras a{
     color: rgb(156, 8, 8);
     text-decoration:solid;
+    font-size: 15px;
+    border: none;
+    width: fit-content;
 }
 
 #forras a:hover{
     color:white;
-    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.5);
+    text-shadow: 0 10px 15px rgba(255, 255, 255,0.5);
 }
 
-div{
+.forma1tortenete{
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -223,22 +316,209 @@ div{
     max-width: 2000px;
     border: 3px solid rgb(156, 8, 8);
     border-radius: 15px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color:white;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 10px;
-    box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.5);
+    transition-duration: 0.8s;
 }
 
-div h2{
+.forma1tortenete h2{
     text-align: center;
 }
 
-div:hover{
+.forma1tortenete:hover{
     color: white;
     background-color: rgb(66, 10, 10);
     border-color: white;
+}
+
+#harmadik h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.mercedes{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    width: 35%;
+    border: #00d2be solid 3px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    transition-duration: 0.8s;
+}
+
+.mercedes h2{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00d2be;
+}
+
+.mercedes:hover{
+    background-color: #68afa9;
+    color:black;
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    border: 3px solid #111;
+}
+
+#efooter{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid rgb(156, 8, 8);
+    margin-top: 30px;
+    position:relative;
+    height: 100px;
+    padding: 20px;
+    width: 100%;
+}
+
+#efooter a{
+    color: rgb(156, 8, 8);
+    text-decoration: none;
+    font-size: 15px;
+    border: 3px solid white;
+    width: fit-content;
+    transition-duration: 0.6s;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    float : right;
+}
+
+#efooter a:hover{
+    background-color:white;
+    color: rgb(156, 8, 8);
+}
+
+#efooter p{
+    float: left;
+    color: rgb(156, 8, 8);
+    text-align: left;
+}
+
+#mfooter{
+    color: rgb(200, 52, 236);
+    text-decoration: none;
+    font-size: 15px;
+    border: 3px solid white;
+    width: 100%;
+    transition-duration: 0.6s;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    float : right;
+    position: sticky;
+}
+
+#mfooter a{
+    color: rgb(200, 52, 236);
+    text-decoration: none;
+    font-size: 15px;
+    border: 3px solid white;
+    width: fit-content;
+    transition-duration: 0.6s;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 15px;
+    float : right;
+}
+
+#mfooter a:hover{
+    background-color:white;
+    color: rgb(200, 52, 236);
+}
+
+#mfooter p{
+    float: left;
+    color: rgb(200, 52, 236);
+    text-align: left;
+}
+
+#masodik .column{
+    margin-top: 100px;
+}
+
+.kartyak{
+    margin-left: 325px;
+}
+
+.column {
+  display: inline-block;
+  width: 600px;
+  padding: 10px;
+  transition-duration: 0.5s;
+  background-color: rgb(63, 3, 48);
+  color: white;
+  text-align: center;
+  margin-left: auto;
+}
+
+.column h2, .column p {
+  text-align: left;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(250, 121, 239,0.2);
+  height: 100%;
+  padding: 10px;
+  transition-duration: 0.5s;
+   border-radius: 10px;
+}
+
+.card img{ 
+   border-radius: 10px;
+   margin-top: 20px;
+   border: rgb(243, 176, 237) solid 2px;
+}
+
+.column a{ 
+  border: none;
+  display: block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 550px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.column:hover{
+    background-color: rgb(94, 64, 91);
+    border-color: white;
+    box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.5);
+    transform: translateY(-30px);
+}
+
+.card:hover{
+    background-color: rgb(226, 184, 223);
+    border-color: white;
+    color:black;
+}
+
+.card img:hover{
+    border: 2px solid rgba(250, 121, 239,0.2);
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media (max-width: 768px){
