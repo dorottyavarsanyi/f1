@@ -32,28 +32,30 @@ padding-top: 200px;
 
 .auto img{
     transition: transform 0.6s;
+    width: 147.392px;
+    height: 35px;
 }
 
 #elso .auto img{
-    transform: translateX(-130px);
+    transform: translateX(-110px);
 }
 
 #masodik .auto img{
-    transform: translateX(-360px);
+    transform: translateX(-320px);
 }
 
 #harmadik .auto img{
-    transform: translateX(145px);
+    transform: translateX(130px);
 }
 
 #negyedik .auto img{
-    transform: translateX(370px);
+    transform: translateX(355px);
 }
 
 nav{
     height:fit-content; 
     padding-top: 8px;    
-    font-size: 30px; 
+    font-size: 25px; 
     background-color: black;
     border: 5px solid rgb(156, 8, 8);
     width: 99%;
@@ -72,7 +74,7 @@ nav li{
 
 .btn, a{
     height: fit-content;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(156, 8, 8);
     border: 2px solid white;
@@ -96,7 +98,7 @@ nav li{
 .menu{
     height:fit-content; 
     padding-top: 8px;    
-    font-size: 30px; 
+    font-size: 25px; 
     background-color: black;
     border: 5px solid rgb(250, 121, 239);
     width: 99%;
@@ -110,7 +112,7 @@ nav li{
 
 .btn1, a{
     height: fit-content;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     color:rgb(126, 8, 156);
     border: 2px solid white;
@@ -134,7 +136,7 @@ nav li{
 .menu2{
     height:fit-content; 
     padding-top: 8px;    
-    font-size: 30px; 
+    font-size: 25px; 
     background-color: black;
     border: 5px solid #44817b;
     width: 99%;
@@ -148,7 +150,7 @@ nav li{
 
 .btn2, a{
     height: fit-content;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     color: #63807d;
     border: 2px solid white;
@@ -170,7 +172,7 @@ nav li{
 .menu3{
     height:fit-content; 
     padding-top: 8px;    
-    font-size: 30px; 
+    font-size: 25px; 
     background-color: black;
     border: 5px solid #29317e;
     width: 99%;
@@ -205,19 +207,19 @@ nav li{
 
 #logo{
 float: left;
-width: 200px;
+width: 170px;
 }
 
 #logo1{
     float: left;
-    width: 195px;
+    width: 170px;
     padding-top: 10px;
 }
 
 #autokicsi{
     float: right;
-    width: 200px;
-    height: 163px;
+    width: 170px;
+    height: 127.5px;
 }
 
 #cim{
@@ -236,12 +238,12 @@ width: 200px;
     padding: 40px;
     margin-left: 60px;
     margin-top: 30px;
-    width: 402px;;
+    width: 321.6px;
 }
 
 .balkepek img{
     display: block;
-    width:400px;
+    width: 319px;
     margin-top: 35px;
     border-radius: 10px;
     max-height: 400px;
@@ -260,12 +262,12 @@ width: 200px;
     padding: 40px;
     margin-right: 60px;
     margin-top: 30px;
-    width: 402px;
+    width: 321.6px;
 }
 
 .jobbkepek img{
     display: block;
-    width:400px;
+    width:319px;
     margin-top: 35px;
     border-radius: 10px;
     max-height: 350px;
@@ -309,11 +311,11 @@ width: 200px;
 }
 
 .forma1tortenete{
-    font-size: 20px;
+    font-size: 18px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    max-width: 2000px;
+    width: 40%;
+    max-width: 1500px;
     border: 3px solid rgb(156, 8, 8);
     border-radius: 15px;
     background-color: rgb(0, 0, 0);
@@ -456,7 +458,7 @@ width: 200px;
 
 .column {
   display: inline-block;
-  width: 600px;
+  width: 400px;
   padding: 10px;
   transition-duration: 0.5s;
   background-color: rgb(63, 3, 48);
@@ -475,13 +477,15 @@ width: 200px;
   height: 100%;
   padding: 10px;
   transition-duration: 0.5s;
-   border-radius: 10px;
+  border-radius: 10px;
 }
 
 .card img{ 
    border-radius: 10px;
    margin-top: 20px;
    border: rgb(243, 176, 237) solid 2px;
+   width: 380px;
+   height: 250px;
 }
 
 .column a{ 
@@ -491,7 +495,7 @@ width: 200px;
   color: white;
   text-align: center;
   cursor: pointer;
-  width: 550px;
+  width: 350px;
   margin-right: 20px;
   font-size: 20px;
 }
