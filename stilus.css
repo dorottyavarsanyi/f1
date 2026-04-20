@@ -222,12 +222,13 @@ width: 170px;
     height: 127.5px;
 }
 
-#cim{
+.cim{
     color:white;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
+    margin-top: 2%;
 }
 
 .balkepek{
@@ -243,15 +244,18 @@ width: 170px;
 
 .balkepek img{
     display: block;
-    width: 319px;
+    width: 100%;
+    max-width: 319px;
     margin-top: 35px;
     border-radius: 10px;
     max-height: 400px;
+    border: 2px solid white;
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
 }
 
 .balkepek img:hover{
-    border: 2px solid white;
-    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
+   /* border: 2px solid white;
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);*/
 }
 
 .jobbkepek{
@@ -267,15 +271,18 @@ width: 170px;
 
 .jobbkepek img{
     display: block;
-    width:319px;
+    width: 100%;
+    max-width:319px;
     margin-top: 35px;
     border-radius: 10px;
     max-height: 350px;
+    border: 2px solid white;
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
 }
 
 .jobbkepek img:hover{
-    border: 2px solid white;
-    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
+    /*border: 2px solid white;
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);*/
 }
 
 #forras{
@@ -311,10 +318,10 @@ width: 170px;
 }
 
 .forma1tortenete{
-    font-size: 18px;
+    font-size: 17px;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 48%;
     max-width: 1500px;
     border: 3px solid rgb(156, 8, 8);
     border-radius: 15px;
@@ -337,15 +344,8 @@ width: 170px;
     border-color: white;
 }
 
-#harmadik h1{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
 .mercedes{
-    font-size: 20px;
+    font-size: 17px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -354,7 +354,7 @@ width: 170px;
     text-align: center;
     background-color: #111;
     color: white;
-    width: 35%;
+    width: 50%;
     border: #00d2be solid 3px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
     transition-duration: 0.8s;
@@ -376,13 +376,12 @@ width: 170px;
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 7px;
     border-top: 3px solid rgb(156, 8, 8);
-    margin-top: 30px;
-    position:relative;
+    margin-top: 10%;
+    position: relative;
     height: 100px;
-    padding: 20px;
-    width: 100%;
+    width: 99%;
 }
 
 #efooter a{
@@ -396,6 +395,7 @@ width: 170px;
     margin-left: auto;
     margin-right: auto;
     float : right;
+    margin-top: 1%;
 }
 
 #efooter a:hover{
@@ -411,35 +411,17 @@ width: 170px;
 
 #mfooter{
     color: rgb(200, 52, 236);
+    background-color: black;
     text-decoration: none;
-    font-size: 15px;
-    border: 3px solid white;
-    width: 100%;
+    font-size: 13px;
+    border: 2px solid white;
+    width: 99%;
     transition-duration: 0.6s;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    /*border-radius: 10px;*/
     float : right;
     position: sticky;
-}
-
-#mfooter a{
-    color: rgb(200, 52, 236);
-    text-decoration: none;
-    font-size: 15px;
-    border: 3px solid white;
-    width: fit-content;
-    transition-duration: 0.6s;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: 40px;
-    margin-top: 15px;
-    float : right;
-}
-
-#mfooter a:hover{
-    background-color:white;
-    color: rgb(200, 52, 236);
+    margin-top: 8%;
+    padding: 7px;
 }
 
 #mfooter p{
@@ -448,12 +430,54 @@ width: 170px;
     text-align: left;
 }
 
+#hfooter{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    border-top: 3px solid rgb(5, 80, 85);
+    margin-top: 3%;
+    position: relative;
+    height: 100px;
+    width: 99%;
+}
+
+#hfooter a{
+    color: #00d2be;
+    text-decoration: none;
+    font-size: 15px;
+    border: 3px solid white;
+    width: fit-content;
+    transition-duration: 0.6s;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    float : right;
+    margin-top: 1%;
+}
+
+#hfooter a:hover{
+    background-color:white;
+    color: rgb(5, 80, 85);
+}
+
+#hfooter p{
+    float: left;
+    color: #00d2be;
+    text-align: left;
+}
+
 #masodik .column{
     margin-top: 100px;
 }
 
+#masodik section{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .kartyak{
-    margin-left: 325px;
+    width: 65%;
 }
 
 .column {
@@ -516,24 +540,4 @@ width: 170px;
 .card img:hover{
     border: 2px solid rgba(250, 121, 239,0.2);
     box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-@media (max-width: 768px){
-    .balkepek, .jobbkepek {
-        float: none;
-        width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-    }
-
-    .balkepek img,.jobbkepek img {
-        width: 100%; 
-    }
 }
