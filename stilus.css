@@ -26,7 +26,7 @@ padding-top: 200px;
 }
 
 #negyedik{
-    background-image: url(23232.jpg);
+    background-image: url(b4646718705da69f750c0a02261d3282.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -235,9 +235,11 @@ width: 170px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 20px;
+    font-size: 20pt;
     margin-top: 2%;
+    clear: both;
 }
+
 
 .balkepek{
     max-height: fit-content;
@@ -345,16 +347,15 @@ width: 170px;
 }
 
 .mercedes{
-    font-size: 17px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 30%;
+    clear: both;
+    font-size: 21px;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
     text-align: center;
     background-color: #111;
     color: white;
-    width: 50%;
     border: #00d2be solid 3px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
     transition-duration: 0.8s;
@@ -372,6 +373,74 @@ width: 170px;
     border: 3px solid #111;
 }
 
+#er{
+    float: left;
+    width: 45%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+}
+
+.mr{
+    clear: both;
+   float: right;
+   width: 45%;
+   margin-right: 1%;
+   margin-top: 2%;
+}
+
+#kepek1{
+    float: right;
+    height: 1300px;
+    width: 45%;
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: #111;
+    border: 2px solid #00d2be;
+    text-align: center;
+    border-radius: 20px; 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    transition-duration: 0.8s;
+}
+
+#kepek1 img{
+    border-radius: 75px;
+    margin: 3px;
+    width: 31.5%;
+  display: inline-block;
+  height: 48%;
+  max-height:645px;
+  padding-top: 0.5%;
+}
+
+#kepek2{
+    float: left;
+    height: 1805px;
+    margin-top: 2%;
+    width: 45%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: #111;
+    border: 2px solid #00d2be;
+    text-align: center;
+    border-radius: 20px; 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    transition-duration: 0.8s;
+    padding-top: 2%;
+}
+
+#kepek2 img{
+    border-radius: 75px;
+    margin: 3px;
+    width: 32%;
+    display: inline-block;
+    height: 70%;
+    max-height: 645px;
+}
+
+#oldalrol img{
+    width: 80%;
+}
+
 #efooter{
     background-color: black;
     color: white;
@@ -381,7 +450,7 @@ width: 170px;
     margin-top: 5%;
     position: relative;
     height: 100px;
-    width: 99.2%;
+    width: 99.4%;
 } 
 
 #efooter a{
@@ -439,10 +508,10 @@ width: 170px;
     text-align: center;
     padding: 7px;
     border-top: 3px solid rgb(5, 80, 85);
-    margin-top: 5%;
+    margin-top: 2%;
     position: sticky;
     height: 100px;
-    width: 99%;
+    width: 99.4%;
     font-size: 15px;
 }
 
@@ -546,4 +615,310 @@ width: 170px;
 .card img:hover{
     border: 2px solid rgba(250, 121, 239,0.2);
     box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+.teszt{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48%;
+    max-width: 1500px;
+    border: 3px solid rgb(156, 8, 8);
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.5);
+    transition-duration: 0.8s;
+}
+
+.teszt button{
+    color: black;
+    text-align: center;
+    border: 2px solid rgb(156, 8, 8);
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.teszt h1{
+    text-align: center;
+}
+
+.teszt p{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.teszt p:hover{
+    color: rgb(156, 8, 8);
+}
+
+.teszt label:hover{
+    color:rgb(156, 8, 8);
+    cursor: pointer;
+}
+
+.mercedes_teszt{
+    clear: right;
+    display: block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #111;
+    color: white;
+    width: 50%;
+    border: #00d2be solid 3px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    transition-duration: 0.8s;
+}
+
+.mercedes_teszt button{
+    color: white;
+    text-align: center;
+    border: 2px solid #00d2be;
+    background-color: #092926;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.mercedes_teszt h1{
+    text-align: center;
+}
+
+.mercedes_teszt p{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.mercedes_teszt p:hover{
+    color: #00d2be;
+}
+
+.mercedes_teszt label:hover{
+    color: #00d2be;
+    cursor: pointer;
+}
+
+#negyedik h1{
+    text-align: center;
+    clear: both;
+}
+
+#fangio{
+    font-size: 18px;
+    width: 20%;
+    float: left;
+    background-color: rgb(53, 1, 1);
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: right;
+    margin: 1%;
+    padding: 10px;
+}
+
+#clark{
+    font-size: 18px;
+    width: 20%;
+    float: right;
+    background-color: rgb(0,66,37);
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    border: 2px solid rgb(243, 247, 54);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    margin: 1%;
+    padding: 10px;
+}
+
+#stewart{
+    font-size: 18px;
+    width: 20%;
+    float: left;
+    background-color: rgb(0, 40, 104);
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: right;
+    margin: 1%;
+    padding: 10px;
+}
+
+#lauda{
+    font-size: 18px;
+    width: 20%;
+    float: right;
+    background-color: rgb(53, 1, 1);
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    margin: 1%;
+    padding: 10px;
+}
+
+#prost{
+    font-size: 18px;
+    width: 20%;
+    float: left;
+    background-color: rgb(53, 1, 1);
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: right;
+    margin: 1%;
+    padding: 10px;
+}
+
+#senna{
+   font-size: 18px;
+   width: 20%;
+   float: right;
+   background-color: rgb(255, 221, 0);
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(0, 0, 0);
+   border: 2px solid rgb(255, 255, 255);
+   box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+   text-align: left;
+   margin: 1%; 
+   padding: 10px;
+}
+
+#nelson{
+    font-size: 18px;
+    width: 20%;
+    float: right;
+    background-color:rgb(0, 28, 72);
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    margin: 1%;
+    padding: 10px;
+}
+
+#schumacher {
+    font-size: 18px;
+    width: 20%;
+    float: left;
+    background-color: rgb(239, 27, 35);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: right;
+    margin: 1%;
+    padding: 10px;
+}
+
+#hamilton{
+    font-size: 18px;
+    width: 20%;
+    float: right;
+    background-color: rgb(0, 161, 155);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    margin: 1%; 
+    padding: 10px;
+}
+
+#vettel{
+    font-size: 18px;
+    width: 20%;
+    float: left;
+    background-color: rgb(0, 0, 64);
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: right;
+    margin: 1%;
+    padding: 10px;
+}
+
+#verstappen{
+    font-size: 18px;
+    width: 20%;
+    float: right;
+    background-color:rgb(0, 0, 64);
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    margin: 1%;
+    padding: 10px;
+}
+
+#alonso{
+    font-size: 18px;
+    width: 20%;
+    float: left;
+    background-color:  rgb(0, 130, 200);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+    text-align: right;
+    margin: 1%;
+    padding: 10px;
+}
+
+.pilotak_teszt{
+    clear: both;
+    display: block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #111;
+    color: white;
+    width: 50%;
+    border: #ccdddc solid 3px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    transition-duration: 0.8s;
+}
+
+.pilotak_teszt button{
+    color: white;
+    text-align: center;
+    border: 2px solid #00d2be;
+    background-color: #092926;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.pilotak_teszt h1{
+    text-align: center;
+}
+
+.pilotak_teszt p{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.pilotak_teszt p:hover{
+    color: #00d2be;
+}
+
+.pilotak_teszt label:hover{
+    color: #00d2be;
+    cursor: pointer;
 }

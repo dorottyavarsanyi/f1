@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Mercedes Forma–1 kvíz</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .kerdes {
+      margin-bottom: 30px;
+    }
+
+    #eredmeny {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Mercedes Forma–1 teszt</h1>
+
+  <!-- ===================== -->
+  <!-- 1. KÉRDÉS             -->
+  <!-- ===================== -->
+  <div class="kerdes">
+    <p><strong>1. Mikor lépett be először a Mercedes a Forma–1-be gyári csapatként?</strong></p>
+
+    <!--
+      Azonos name="q1" → egy kérdés
+      value → ezt ellenőrizzük JavaScriptből
+    -->
+    <label><input type="radio" name="q1" value="A"> A) 1950-ben</label><br>
+    <label><input type="radio" name="q1" value="B"> B) 1954-ben</label><br>
+    <label><input type="radio" name="q1" value="C"> C) 1962-ben</label>
+  </div>
+
+  <!-- ===================== -->
+  <!-- 2. KÉRDÉS             -->
+  <!-- ===================== -->
+  <div class="kerdes">
+    <p><strong>2. Ki vezette a Mercedest az első világbajnoki címeihez az 1950-es években?</strong></p>
+
+    <label><input type="radio" name="q2" value="A"> A) Stirling Moss</label><br>
+    <label><input type="radio" name="q2" value="B"> B) Juan Manuel Fangio</label><br>
+    <label><input type="radio" name="q2" value="C"> C) Alberto Ascari</label>
+  </div>
+
+  <!-- ===================== -->
+  <!-- 3. KÉRDÉS             -->
+  <!-- ===================== -->
+  <div class="kerdes">
+    <p><strong>3. Melyik csapatot vásárolta fel a Mercedes 2010-ben?</strong></p>
+
+    <label><input type="radio" name="q3" value="A"> A) Williams</label><br>
+    <label><input type="radio" name="q3" value="B"> B) Brawn GP</label><br>
+    <label><input type="radio" name="q3" value="C"> C) Renault</label>
+  </div>
+
+  <!-- ===================== -->
+  <!-- 4. KÉRDÉS             -->
+  <!-- ===================== -->
+  <div class="kerdes">
+    <p><strong>4. Milyen korszakban volt a Mercedes különösen domináns 2014 és 2020 között?</strong></p>
+
+    <label><input type="radio" name="q4" value="A"> A) Turbókorszakban</label><br>
+    <label><input type="radio" name="q4" value="B"> B) Hibridkorszakban</label><br>
+    <label><input type="radio" name="q4" value="C"> C) Szívómotoros korszakban</label>
+  </div>
+
+  <!-- ===================== -->
+  <!-- 5. KÉRDÉS             -->
+  <!-- ===================== -->
+  <div class="kerdes">
+    <p><strong>5. Kik a Mercedes pilótái a 2026-os szezonban?</strong></p>
+
+    <label><input type="radio" name="q5" value="A"> A) Lewis Hamilton és George Russell</label><br>
+    <label><input type="radio" name="q5" value="B"> B) George Russell és Lando Norris</label><br>
+    <label><input type="radio" name="q5" value="C"> C) George Russell és Kimi Antonelli</label>
+  </div>
+
+  <!-- ===================== -->
+  <!-- ELLENŐRZÉS GOMB        -->
+  <!-- ===================== -->
+  <button onclick="ellenoriz()">Ellenőrzés</button>
+
+  <!-- Itt jelenik meg az eredmény -->
+  <p id="eredmeny"></p>
+
+  <!-- ===================== -->
+  <!-- JAVASCRIPT LOGIKA     -->
+  <!-- ===================== -->
+  <script>
+    function ellenoriz() {
+
+      /*
+        A helyes válaszok objektumban:
+        kulcs  → kérdés name-je
+        érték  → helyes válasz value-ja
+      */
+      const helyesValaszok = {
+        q1: "B",
+        q2: "B",
+        q3: "B",
+        q4: "B",
+        q5: "C"
+      };
+
+      let pontszam = 0;
+      let osszesKerdes = 5;
+
+      /*
+        Végigmegyünk minden kérdésen
+      */
+      for (let kerdes in helyesValaszok) {
+
+        // Megkeressük az adott kérdés kijelölt válaszát
+        const kijelolt = document.querySelector(`input[name="${kerdes}"]:checked`);
+
+        // Ha nincs válasz, kihagyjuk
+        if (!kijelolt) continue;
+
+        // Ha helyes → pont
+        if (kijelolt.value === helyesValaszok[kerdes]) {
+          pontszam++;
+        }
+      }
+
+      // Eredmény kiírása
+      const eredmeny = document.getElementById("eredmeny");
+      eredmeny.innerText = `Eredményed: ${pontszam} / ${osszesKerdes}`;
+    }
+  </script>
+
+</body>
+</html>

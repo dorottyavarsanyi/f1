@@ -20,10 +20,11 @@
     </nav>
 </header>
 
+
 <section class="cim">
     <h1>A Mercedes története a Formula–1-ben</h1>
 </section>
-
+<div id="er">
 <div class="mercedes" >
     <h2>1. A kezdetek és az 1950-es évek dominanciája</h2>
     <p>
@@ -66,12 +67,22 @@
     A Red Bull átvette a vezetést, a Mercedes pedig több szezonon át dolgozott egy stabil és versenyképes koncepció kiépítésén. 
     </p>
 </div>
+</div>
+
+<div id="kepek1">    
+    <img src="hamilton.jpg" alt="Hamilton" title="Hamilton">
+    <img src="virag.jpg" alt="Mercedes autó" title="Mercedes F1">
+    <img src="group.jpg" alt="Mercedes csapata" title="Mercedes csapata">
+    <img src="autok.jpg" alt="Mercedes autók" title="Mercedes F1"> 
+    <img src="mercilogo.jpg" alt="Mercedes autó" title="Mercedes F1">
+    <img src="kimi.jpg" alt="Kimi Antonelli" title="Kimi Antonelli">
+</div>
 
 <section class="cim">
     <h1>A Mercedes a jelenben (2025–2026)</h1>
 </section>
 
-
+<div class="mr">
 <div class="mercedes">
     <h2>6. A W17 E Performance és a 2026-os technikai forradalom</h2>
     <p>
@@ -128,17 +139,94 @@
     A technikai innovációk, a fiatal és gyors pilótapáros, valamint a stratégiai kiválóság biztosítja, hogy a csapat tartósan a csúcson maradjon. 
     </p>
 </div>
+</div>
 
-<!-- 
-<h2>Források</h2>
-<p>
-[1](https://www.total-motorsport.com/formula-1-teams/mercedes/)  
-[2](https://www.mercedes-amg.com/en/formula-1)  
-[3](https://www.rnz.co.nz/news/sport/590693/f1-mercedes-can-make-it-3-out-of-3-in-suzuka-lawson-chasing-points)  
-[4](https://f1grandprix.motorionline.com/en/F1-Japanese-GP-2026-Mercedes-Antonelli-Russell-analysis/)  
-[5](https://www.motorsport.com/f1/news/mclaren-offers-frank-summary-of-f1-2026-performance-with-05-1s-gap-to-mercedes/10803422/)
-</p>
- -->
+<div id="kepek2">    
+    <img src="kimiesgeorge.jpg" alt="Kimi Antonelli és George Russell" title="Kimi Antonelli és George Russell">
+    <img src="fek.jpg" alt="Mercedes autó" title="Mercedes F1">
+    <img src="megy.jpg" alt="Mercedes autó" title="Mercedes F1">
+    <img src="2026.jpg" alt="Kimi Antonelli futamgyőzelme" title="Kimi Antonelli futamgyőzelme"> 
+    <img src="cel.jpg" alt="Mercedes autó" title="Mercedes F1">
+    <img src="russel.jpg" alt="George Russell" title="George Russell">
+</div>
+
+<div class="mercedes_teszt">
+  <h1>Mercedes Forma–1 teszt</h1>
+
+  <div class="kerdes">
+    <p>1. Mikor lépett be először a Mercedes a Forma–1-be gyári csapatként?</p>
+
+    <label><input type="radio" name="q1" value="A"> A) 1950-ben</label><br>
+    <label><input type="radio" name="q1" value="B"> B) 1954-ben</label><br>
+    <label><input type="radio" name="q1" value="C"> C) 1962-ben</label>
+  </div>
+
+  <div class="kerdes">
+    <p>2. Ki vezette a Mercedest az első világbajnoki címeihez az 1950-es években?</p>
+
+    <label><input type="radio" name="q2" value="A"> A) Juan Manuel Fangio</label><br>
+    <label><input type="radio" name="q2" value="B"> B) Stirling Moss</label><br>
+    <label><input type="radio" name="q2" value="C"> C) Alberto Ascari</label>
+  </div>
+
+  <div class="kerdes">
+    <p>3. Melyik csapatot vásárolta fel a Mercedes 2010-ben?</p>
+
+    <label><input type="radio" name="q3" value="A"> A) Williams</label><br>
+    <label><input type="radio" name="q3" value="B"> B) Renault</label><br>
+    <label><input type="radio" name="q3" value="C"> C) Brawn GP</label>
+  </div>
+
+  <div class="kerdes">
+    <p>4. Milyen korszakban volt a Mercedes különösen domináns 2014 és 2020 között?</p>
+
+    <label><input type="radio" name="q4" value="A"> A) Turbókorszakban</label><br>
+    <label><input type="radio" name="q4" value="B"> B) Hibridkorszakban</label><br>
+    <label><input type="radio" name="q4" value="C"> C) Szívómotoros korszakban</label>
+  </div>
+
+  <div class="kerdes">
+    <p>5. Kik a Mercedes pilótái a 2026-os szezonban?</p>
+
+    <label><input type="radio" name="q5" value="A"> A) Lewis Hamilton és George Russell</label><br>
+    <label><input type="radio" name="q5" value="B"> B) George Russell és Lando Norris</label><br>
+    <label><input type="radio" name="q5" value="C"> C) George Russell és Kimi Antonelli</label>
+  </div>
+
+  <button onclick="ellenoriz()">Ellenőrzés</button>
+
+  <p id="eredmeny"></p>
+
+  <script>
+    function ellenoriz() {
+
+      const helyesValaszok = {
+        q1: "B",
+        q2: "A",
+        q3: "C",
+        q4: "B",
+        q5: "C"
+      };
+
+      let pontszam = 0;
+      let osszesKerdes = 5;
+
+      for (let kerdes in helyesValaszok) {
+
+        const kijelolt = document.querySelector(`input[name="${kerdes}"]:checked`);
+
+        if (!kijelolt) continue;
+
+        if (kijelolt.value === helyesValaszok[kerdes]) {
+          pontszam++;
+        }
+      }
+
+      const eredmeny = document.getElementById("eredmeny");
+      eredmeny.innerText = `Eredményed: ${pontszam} / ${osszesKerdes}`;
+    }
+  </script>
+  </div>
 
  <footer id="hfooter">
     <p>© 2025-2026 F1 története.

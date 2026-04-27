@@ -154,17 +154,83 @@ A modern éra egyik legsikeresebb konstruktőre.
 Ha szeretnéd, készíthetek idővonalat, csapatonkénti részletes történetet, vagy akár magyar F1-es vonatkozások külön összefoglalót is.</p>
 </div>
 
+<div class="teszt">
+<h1>Forma–1 teszt</h1>
 
-<!--
-<section id="forras">
-<h2>Források</h2>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/History_of_Formula_One">en.wikipedia.org</a></li>
-<li><a href="https://belushis.com/f1-history">belushis.com</a></li>
-<li><a href="https://www.britannica.com/sports/Formula-One-automobile-racing">britannica.com</a></li>
-<li><a href="https://www.formulaonehistory.com/">formulaonehistory.com</a></li>
-<li><a href="https://www.formula1.com/en/latest/article/the-family-tree-f1-11-teams-and-how-they-came-to-be.2QBA1PPMf0bC8mp2xxqZeq">formula1.com</a></li></ul>
-</section> -->
+  <div class="kerdes">
+    <p><strong>1. Mikor rendezték az első Forma–1-es világbajnokságot?</strong></p>
+
+    <label><input type="radio" name="q1" value="A"> A) 1946-ban</label><br>
+    <label><input type="radio" name="q1" value="B"> B) 1950-ben</label><br>
+    <label><input type="radio" name="q1" value="C"> C) 1960-ban</label>
+  </div>
+
+  <div class="kerdes">
+    <p><strong>2. Ki nyerte az első Forma–1-es világbajnokságot?</strong></p>
+
+    <label><input type="radio" name="q2" value="A"> A) Juan Manuel Fangio</label><br>
+    <label><input type="radio" name="q2" value="B"> B) Alain Prost</label><br>
+    <label><input type="radio" name="q2" value="C"> C) Giuseppe Farina</label>
+  </div>
+
+  <div class="kerdes">
+    <p><strong>3. Melyik pilóta volt híres az 1950-es években, és hány bajnoki címet nyert?</strong></p>
+
+    <label><input type="radio" name="q3" value="A"> A) Ayrton Senna – 3 cím</label><br>
+    <label><input type="radio" name="q3" value="B"> B) Juan Manuel Fangio – 5 cím</label><br>
+    <label><input type="radio" name="q3" value="C"> C) Michael Schumacher – 7 cím</label>
+  </div>
+
+  <div class="kerdes">
+    <p><strong>4. Melyik csapat volt nagyon sikeres Michael Schumacherrel a 2000-es évek elején?</strong></p>
+
+    <label><input type="radio" name="q4" value="A"> A) Ferrari</label><br>
+    <label><input type="radio" name="q4" value="B"> B) McLaren</label><br>
+    <label><input type="radio" name="q4" value="C"> C) Williams</label>
+  </div>
+
+  <div class="kerdes">
+    <p><strong>5. Ki a Red Bull csapat sikeres pilótája a 2020-as években?</strong></p>
+
+    <label><input type="radio" name="q5" value="A"> A) Sebastian Vettel</label><br>
+    <label><input type="radio" name="q5" value="B"> B) Sergio Pérez</label><br>
+    <label><input type="radio" name="q5" value="C"> C) Max Verstappen</label>
+  </div>
+
+  <button onclick="ellenoriz()">Ellenőrzés</button>
+
+  <p id="eredmeny"></p>
+  </div>
+
+  <script>
+    function ellenoriz() {
+
+      const helyesValaszok = {
+        q1: "B",
+        q2: "C",
+        q3: "B",
+        q4: "A",
+        q5: "C"
+      };
+
+      let pontszam = 0;
+      let osszesKerdes = 5;
+      for (let kerdes in helyesValaszok) {
+
+        const kijelolt = document.querySelector(`input[name="${kerdes}"]:checked`);
+
+        if (!kijelolt) continue;
+
+        if (kijelolt.value === helyesValaszok[kerdes]) {
+          pontszam++;
+        }
+      }
+
+      const eredmeny = document.getElementById("eredmeny");
+      eredmeny.innerText = `Eredményed: ${pontszam} / ${osszesKerdes}`;
+    }
+  </script>
+
 
 </body>
 <footer id="efooter">
